@@ -1,0 +1,69 @@
+doctype html
+html
+    head
+        style
+            include ../static/style.css
+    body
+        nav#navbar 
+            ul 
+                div#logo
+                    img(src='/static/logo.png')
+                    | PRABAL COACHING INSTITUTE
+                div.vl
+                li #[a(href='/') Home]
+                li #[a(href='/') Courses]
+                li #[a(href='/') Our Results]
+                li #[a(href='/') Join Now]
+                li #[a(href='/') About Us]
+                li #[a(href='/') Contact Us]
+
+        Section#introSection
+            div.title ONE STOP SOLUTION FOR ALL STUDENTS
+            div.small Since 1999
+            hr
+            br
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi blanditiis maiores laboriosam ad! Quidem reprehenderit necessitatibus ab totam sint optio iure laudantium perspiciatis atque. Impedit voluptatibus tempore accusamus necessitatibus iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio dolorum, ipsam tenetur et eaque qui labore exercitationem earum reiciendis quia delectus repellendus eum nesciunt fugit nobis tempora veritatis ipsa.
+        
+        Section#techniqueSection 
+            h1 Our Teaching Techniques
+            div.card 
+                h3 Concept Building
+                div.card-box
+                    div.card-img
+                        img(src='/static/concept.png')
+                    div.card-content
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid numquam consequuntur ipsa voluptatibus in atque dolores a error ex eligendi?
+            div.card 
+                h3 Doubt Sessions
+                div.card-box
+                    div.card-img
+                        img(src='/static/doubt.png')
+                    div.card-content
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid numquam consequuntur ipsa voluptatibus in atque dolores a error ex eligendi?
+            div.card 
+                h3 Tests
+                div.card-box
+                    div.card-img
+                        img(src='/static/test.png')
+                    div.card-content
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid numquam consequuntur ipsa voluptatibus in atque dolores a error ex eligendi?
+
+        br
+
+        section#sponsorsSection 
+            h1 Our Sponsors 
+            div#sponsors
+                img(src='/static/microsoft.png', alt='Microsoft', class='spImg')
+                img(src='/static/dell.jpg', alt='Dell', class='spImg')
+                img(src='/static/zoom.png', alt='Zoom', class='spImg')
+                img(src='/static/extramarks.png', alt='Extramarks', class='spImg')
+
+        br
+
+        footer#footer 
+            div
+                img(src='/static/logo.png')
+            p Copyright © 2020 Prabal Coaching Institute Ltd. | All rights reserved
+
+        script 
+            include ../static/index.js
